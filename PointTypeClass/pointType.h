@@ -9,13 +9,10 @@ template <class T>
 class pointType
 {
 public:
-
-
 	void setPoint(T x, T y);
 
 	T getX() { return posX; } //sets the x value
 	T getY() { return posY; } //sets the y value
-
 
 	void print() const;
 
@@ -26,9 +23,6 @@ public:
 		posY = y;
 	}
 
-	
-	//pointType(T x, T y);
-
 	//Overloaded operator
 	float operator-(const pointType<T>& p2)
 	{
@@ -38,16 +32,13 @@ public:
 
 private:
 	T posX, posY;
-
-
-	
 };
 
 //prints the values out
 template <class T>
 void pointType<T>::print() const
 {
-	cout << "x: " << posX << " , y: " << posY << endl;
+	cout << "(" << posX << ", " << posY << ")" << endl;
 }
 
 //sets the posX and posY variables to the point's coordinate values
@@ -57,6 +48,4 @@ void pointType<T>::setPoint(T a, T b)
 	posX = a;
 	posY = b;
 }
-
-
 #endif

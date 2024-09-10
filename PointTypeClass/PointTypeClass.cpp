@@ -28,16 +28,18 @@ int main()
     cout << "Enter point 2 y-coordinate: "; //input y value for the second point
     inputY = inputCoord();
     p2.setPoint(inputX, inputY); //sets point 2's location to the two point values
-
+    cout << "Point 1: ";
+    p1.print();
+    cout << "Point 2: ";
+    p2.print();
     float d = p1 - p2; //calculates the distance using the overloaded operator
     cout << "The distance between point 1 and point 2: " << d << endl;
 
     circleType<float> c1(p1, p2);
-//    circleType c1(p1.getX(), p1.getY(), p2.getX(), p2.getY());
 
-    c1.getCircumference();
-    c1.getArea();
-
+    //c1.getCircumference();
+    //c1.getArea();
+    c1.print();
 }
 
  
