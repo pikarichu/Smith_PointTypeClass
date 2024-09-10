@@ -1,5 +1,6 @@
 #pragma once
-
+#ifndef H_pointType
+#define H_pointType
 using namespace std;
 #include <iostream>
 #include <cmath>
@@ -58,4 +59,4 @@ void pointType<T>::setPoint(T a, T b)
 }
 
 
-
+#endif

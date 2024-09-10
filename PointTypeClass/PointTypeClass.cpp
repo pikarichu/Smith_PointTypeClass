@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include "pointType.h"
+#include "circleType.h"
 
 float inputCoord()
 {
@@ -30,6 +31,12 @@ int main()
 
     float d = p1 - p2; //calculates the distance using the overloaded operator
     cout << "The distance between point 1 and point 2: " << d << endl;
+
+    circleType<float> c1(p1, p2);
+//    circleType c1(p1.getX(), p1.getY(), p2.getX(), p2.getY());
+
+    c1.getCircumference();
+    c1.getArea();
 
 }
 
