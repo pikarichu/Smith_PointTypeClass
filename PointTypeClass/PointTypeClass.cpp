@@ -39,7 +39,7 @@ int main()
 
     //c1.getCircumference();
     //c1.getArea();
-    c1.print();
+    c1.print(); //runs the circumference and area calculations, then prints out the results for radius, circumference and area
 }
 
  
