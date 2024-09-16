@@ -2,6 +2,7 @@
 #include <iostream>
 #include "pointType.h"
 #include "circleType.h"
+#include "cylinderType.h"
 
 float inputCoord()
 {
@@ -40,6 +41,10 @@ int main()
     //c1.getCircumference();
     //c1.getArea();
     c1.print(); //runs the circumference and area calculations, then prints out the results for radius, circumference and area
+
+    cylinderType<float> cyl1(c1, 10);
+    cyl1.print();
+
 }
 
  

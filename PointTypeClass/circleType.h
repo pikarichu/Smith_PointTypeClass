@@ -11,6 +11,17 @@ class circleType
 {
 public:
 
+	float setRadius(pointType<T>& p1, pointType<T>& p2)
+	{
+		r = p1 - p2; // gets the radius from the distance formula of two points
+		return r;
+	}
+
+	float getRadius()
+	{
+		return r;
+	}
+	
 	float getCircumference() 
 	{
 		float circ = float(M_PI) * (r * 2); //runs circumference calculations with radius r
@@ -30,10 +41,15 @@ public:
 
 	circleType<T>(pointType<T>& p1, pointType<T>& p2)
 	{
-		r = p1 - p2; //radius constructor, gets the radius from the distance formula of two points
+		setRadius(p1, p2);
+		point1 = &p1;
+		point2 = &p2;
 	}
 
 private:
 	float r;
+	pointType<T> *point1;
+	pointType<T> *point2;
+
 };
 #endif

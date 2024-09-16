@@ -128,11 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="circleType.cpp" />
+    <ClCompile Include="cylinderType.cpp" />
     <ClCompile Include="pointType.cpp" />
     <ClCompile Include="PointTypeClass.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="circleType.h" />
+    <ClInclude Include="cylinderType.h" />
     <ClInclude Include="pointType.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -24,12 +24,18 @@
     <ClCompile Include="circleType.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="cylinderType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pointType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="circleType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cylinderType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
