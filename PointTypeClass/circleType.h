@@ -36,7 +36,7 @@ public:
 
 	void print()
 	{
-		cout << "Radius: " << r << endl << "Circumference: " << getCircumference() << endl << "Area: " << getArea() << endl; //print statement
+		cout << endl << "Circle Calculations:" << endl << "Radius: " << r << endl << "Circumference: " << getCircumference() << endl << "Area: " << getArea() << endl << endl; //print statement
 	}
 
 	circleType<T>(pointType<T>& p1, pointType<T>& p2)

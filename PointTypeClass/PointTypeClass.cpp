@@ -29,21 +29,16 @@ int main()
     cout << "Enter point 2 y-coordinate: "; //input y value for the second point
     inputY = inputCoord();
     p2.setPoint(inputX, inputY); //sets point 2's location to the two point values
-    cout << "Point 1: ";
-    p1.print();
-    cout << "Point 2: ";
-    p2.print();
-    float d = p1 - p2; //calculates the distance using the overloaded operator
-    cout << "The distance between point 1 and point 2: " << d << endl;
-
+    cout << "Enter cylinder height: ";
+    inputX = inputCoord();
     circleType<float> c1(p1, p2);
 
-    //c1.getCircumference();
-    //c1.getArea();
+    c1.getCircumference();
+    c1.getArea();
     c1.print(); //runs the circumference and area calculations, then prints out the results for radius, circumference and area
 
-    cylinderType<float> cyl1(c1, 10);
-    cyl1.print();
+    cylinderType<float> cyl1(c1, inputX); //creates the cylinder and then runs the volume and surface area calculations
+    cyl1.print(); //prints out the results for the cylinder
 
 }
 
